@@ -18,3 +18,4 @@ public class Member {
     private String username;
 
 }
+
