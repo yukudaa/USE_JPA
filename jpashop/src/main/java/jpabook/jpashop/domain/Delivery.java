@@ -24,4 +24,3 @@ public class Delivery {
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status; //READY, COMP
 }
-
