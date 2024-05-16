@@ -13,11 +13,10 @@ public class ItemRepository {
 
     private final EntityManager em;
 
-    public void save(Item item){    //업데이트로 이해
+    public void save(Item item) {
         if (item.getId() == null) {
             em.persist(item);
-        }
-        else {
+        } else {
             em.merge(item);
         }
     }
@@ -31,4 +30,3 @@ public class ItemRepository {
                 .getResultList();
     }
 }
-
